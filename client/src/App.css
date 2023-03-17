@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-color: rgb(0, 150, 136);
+    --sec-color: rgb(0, 111, 93);
+    --transition: .3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Changa', sans-serif;
+}
+section {
+    padding: 50px 0;
+}
+.fabg {
+    background-color: #fafafa;
+    position: relative;
+    z-index: 0;
+}

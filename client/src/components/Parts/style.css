@@ -1,0 +1,38 @@
+.title {
+    font-weight: 600;
+    border : 2px solid;
+    margin-bottom: 30px;
+    transition: var(--transition);
+    transition-delay: .1s;
+    z-index: 1;
+}
+.title:hover {
+    color: #fff;
+}
+.title::after, 
+.title::before {
+    content: '';
+    position: absolute;
+    height: 108%;
+    width: 3.5px;
+    background-color: var(--main-color);
+    top: -2px;
+    transition: var(--transition);
+} 
+.title::before {
+    right: -15px;
+}
+.title::after {
+    left: -15px;
+}
+.title:hover::after , 
+.title:hover::before {
+    width: 52%;
+    z-index: -1;
+} 
+.title:hover::before {
+    right: 0;
+} 
+.title:hover::after { 
+    left: 0;
+} 
